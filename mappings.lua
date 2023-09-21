@@ -32,9 +32,34 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    -- My custom mappings
+    ["<C-g>"] = { "<esc>" },
+    ["<leader>r"] = { ":AstroReload<cr>" },
+    ["<leader>l"] = { ":b#<cr>" },
+    ["<PageUp>"] = { ":bprevious<cr>" },
+    ["<PageDown>"] = { ":bnext<cr>" },
+    ["<leader>/"] = { ":Telescope current_buffer_fuzzy_find<cr>" },
+    ["<leader>%"] = {
+      function()
+        require("search-replace.single-buffer").open()
+      end,
+    },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
+  i = {
+    -- My custom mappings
+    ["<C-g>"] = { "<esc>" },
+  },
+  v = {
+    -- My custom mappings
+    ["%"] = {
+      function()
+        require("search-replace.visual-multitype").within()
+      end,
+    },
+  }
 }
