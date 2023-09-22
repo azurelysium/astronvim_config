@@ -36,7 +36,8 @@ return {
     -- My custom mappings
     ["<C-g>"] = { "<esc>" },
     ["<leader>r"] = { ":AstroReload<cr>" },
-    ["<leader>l"] = { ":b#<cr>" },
+    ["<leader>R"] = { ":e<cr>" },
+    ["<leader><Tab>"] = { ":b#<cr>" },
     ["<PageUp>"] = { ":bprevious<cr>" },
     ["<PageDown>"] = { ":bnext<cr>" },
     ["<leader>/"] = { ":Telescope current_buffer_fuzzy_find<cr>" },
