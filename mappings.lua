@@ -46,6 +46,7 @@ return {
         require("search-replace.single-buffer").open()
       end,
     },
+    ["<leader>fB"] = { ":Telescope file_browser path=%:p:h select_buffer=true<cr>" },
   },
   t = {
     -- setting a mapping to false will disable it

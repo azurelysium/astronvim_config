@@ -12,6 +12,10 @@ return {
 
   -- My custom plugins
   {
+    "nvim-telescope/telescope-file-browser.nvim",
+    dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+  },
+  {
     "roobert/search-replace.nvim",
     config = function()
       require("search-replace").setup({
