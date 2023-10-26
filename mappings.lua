@@ -46,6 +46,7 @@ return {
         require("search-replace.single-buffer").open()
       end,
     },
+    ["<leader>O"] = { ":Neotree reveal<cr>" },
     ["<leader>fB"] = { ":Telescope file_browser path=%:p:h select_buffer=true<cr>" },
   },
   t = {

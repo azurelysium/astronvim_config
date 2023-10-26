@@ -34,4 +34,16 @@ return {
       -- refer to the configuration section below
     }
   },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    config = function()
+      require("neo-tree").setup({
+        buffers = {
+          follow_current_file = {
+            enabled = false,
+          },
+        },
+      })
+    end,
+  },
 }
