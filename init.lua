@@ -101,5 +101,11 @@ return {
     }
     require("telescope").load_extension "file_browser"
 
+    vim.opt.list = true
+    vim.opt.listchars:append({ trail = "·" })
+    vim.cmd("highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen")
+    vim.cmd("autocmd ColorScheme * highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen")
+    vim.cmd("match ExtraWhitespace /\\s\\+$/")
+
   end,
 }
