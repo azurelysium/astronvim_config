@@ -103,6 +103,7 @@ return {
 
     vim.opt.list = true
     vim.opt.listchars:append({ trail = "·" })
+    vim.opt.clipboard = "unnamedplus"
     vim.cmd("highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen")
     vim.cmd("autocmd ColorScheme * highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen")
     vim.cmd("match ExtraWhitespace /\\s\\+$/")

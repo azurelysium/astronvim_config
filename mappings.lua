@@ -35,6 +35,7 @@ return {
 
     -- My custom mappings
     ["<C-g>"] = { "<esc>" },
+    ["<C-w>z"] = { ":tabnew %<cr>" },
     ["<leader>r"] = { ":AstroReload<cr>" },
     ["<leader>R"] = { ":e<cr>" },
     ["<leader><Tab>"] = { ":b#<cr>" },
