@@ -57,7 +57,9 @@ return {
   i = {
     -- My custom mappings
     ["<C-g>"] = { "<esc>" },
-    ["<C-j>"] = { "copilot#Accept('<CR>')", noremap = true, silent = true, expr = true, replace_keycodes = false },
+    ["<C-h>"] = { "copilot#Accept('<CR>')", noremap = true, silent = true, expr = true, replace_keycodes = false },
+    ["<C-j>"] = { "copilot#Next()", noremap = true, silent = true, expr = true },
+    ["<C-k>"] = { "copilot#Previous()", noremap = true, silent = true, expr = true },
   },
   v = {
     -- My custom mappings
