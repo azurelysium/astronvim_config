@@ -49,6 +49,7 @@ return {
     },
     ["<leader>O"] = { ":Neotree reveal<cr>" },
     ["<leader>fB"] = { ":Telescope file_browser path=%:p:h select_buffer=true<cr>" },
+    ["<leader><Space>"] = { ":CopilotChatToggle<cr>" },
   },
   t = {
     -- setting a mapping to false will disable it
@@ -68,5 +69,6 @@ return {
         require("search-replace.visual-multitype").within()
       end,
     },
+    ["<leader><Space>"] = { ":CopilotChat " },
   }
 }
