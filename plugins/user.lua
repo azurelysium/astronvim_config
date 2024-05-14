@@ -60,6 +60,12 @@ return {
     },
     opts = {
       debug = true, -- Enable debugging
+      window = {
+        layout = 'float',
+        width = 0.5,
+        height = 0.7,
+        border = 'rounded',
+      },
       -- See Configuration section for rest
     },
     -- See Commands section for default commands if you want to lazy load on them
