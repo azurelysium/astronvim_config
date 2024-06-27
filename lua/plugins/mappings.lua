@@ -52,6 +52,15 @@ return {
           ["<C-j>"] = { "copilot#Next()", noremap = true, silent = true, expr = true },
           ["<C-k>"] = { "copilot#Previous()", noremap = true, silent = true, expr = true },
         },
+        v = {
+          -- My custom mappings
+          ["%"] = {
+            function()
+              require("search-replace.visual-multitype").within()
+            end,
+          },
+          ["<leader><Space>"] = { ":CopilotChat " },
+        },
       },
     },
   },
