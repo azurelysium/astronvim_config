@@ -9,7 +9,17 @@ return {
     ensure_installed = {
       "lua",
       "vim",
+      "bash",
+      "yaml",
+      "json",
+      "python",
+      "rust",
+      "javascript",
+      "typescript",
       -- add more arguments for adding more treesitter parsers
+    },
+    highlight = {
+      enable = true,
     },
   },
 }
