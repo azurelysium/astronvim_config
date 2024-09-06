@@ -15,5 +15,8 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+-- autocmd for removing spaces on empty lines
+vim.cmd [[autocmd BufWritePre * %s/\s\+$//e]]
+
 require "lazy_setup"
 require "polish"
