@@ -16,6 +16,7 @@ return {
       "rust",
       "javascript",
       "typescript",
+      "flatbuffers",
       -- add more arguments for adding more treesitter parsers
     },
     highlight = {
