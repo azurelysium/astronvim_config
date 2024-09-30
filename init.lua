@@ -18,5 +18,8 @@ end
 -- autocmd for removing spaces on empty lines
 vim.cmd [[autocmd BufWritePre * %s/\s\+$//e]]
 
+-- shared kill ring
+vim.opt.clipboard:append("unnamedplus")
+
 require "lazy_setup"
 require "polish"
