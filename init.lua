@@ -18,5 +18,21 @@ end
 -- autocmd for removing spaces on empty lines
 vim.cmd [[autocmd BufWritePre * %s/\s\+$//e]]
 
+function toggle_diagnostics()
+  if vim.diagnostic.is_disabled() then
+    vim.diagnostic.enable()
+  else
+    vim.diagnostic.disable()
+  end
+end
+
+vim.api.nvim_create_user_command(
+  "DiagToggle",
+  function()
+    toggle_diagnostics()
+  end,
+  { desc = "Toggle diagnostics" }
+)
+
 require "lazy_setup"
 require "polish"
