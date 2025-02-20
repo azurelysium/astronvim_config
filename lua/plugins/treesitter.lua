@@ -14,6 +14,8 @@ return {
       "json",
       "python",
       "rust",
+      "kotlin",
+      "svelte",
       "javascript",
       "typescript",
       "flatbuffers",
